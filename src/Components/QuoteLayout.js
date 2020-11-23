@@ -16,6 +16,10 @@ class QuoteLayout extends React.Component {
         this.fetchQuote();
     }
 
+    handleClick = () => {
+        this.fetchQuote();
+    }
+
     render() {
         console.log(styles);
 
@@ -23,6 +27,7 @@ class QuoteLayout extends React.Component {
             <div id={styles.quote_box}>
                 <Quote author={this.state.author} text={this.state.content} />
                 <Tweet author={this.state.author} text={this.state.content} />
+                <button className={styles.new_quote} onClick={this.handleClick}>Get New Quote</button>
             </div>
         );
     }

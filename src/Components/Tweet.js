@@ -5,7 +5,8 @@ const Tweet = (props) => {
     let styles = {
         filter: "brightness(0.5) sepia(1) hue-rotate(140deg) saturate(6)",
         minWidth: "48px",
-        maxWidth: "5%"
+        maxWidth: "5%",
+        paddingTop: "30px"
     };
 
     let intentToTweet =
